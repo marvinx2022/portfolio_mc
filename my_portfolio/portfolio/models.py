@@ -19,6 +19,8 @@ class Educacion(models.Model):
     lugar=models.CharField(max_length=100)
     descripcion=models.CharField(max_length=500)
     titulo=models.CharField(max_length=100)
+    imagen=models.ImageField(("Imagen"), upload_to='images/', height_field=None, width_field=None, max_length=None)
+
     
 class Proyectos(models.Model):
     
@@ -27,7 +29,9 @@ class Proyectos(models.Model):
     lugar=models.CharField(max_length=100)
     descripcion=models.CharField(max_length=500)
     titulo=models.CharField(max_length=100)
-    
+    imagen=models.ImageField(("Imagen"), upload_to='images/', height_field=None, width_field=None, max_length=None)
+
+
 class Experiencia(models.Model):
     
     fecha_inicio=models.DateField()
@@ -35,6 +39,7 @@ class Experiencia(models.Model):
     lugar=models.CharField(max_length=100)
     descripcion=models.CharField(max_length=500)
     titulo=models.CharField(max_length=100)
+    imagen=models.ImageField(("Imagen"), upload_to='images/', height_field=None, width_field=None, max_length=None)
     
 class Servicios(models.Model):
     
